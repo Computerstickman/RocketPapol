@@ -1,4 +1,4 @@
-class Spaceship extends Phaser.GameObjects.Sprtie {
+class Spaceship extends Phaser.GameObjects.Sprite {
     constructor(scene, x, y, texture, frame, pointValue) {
         super(scene, x, y, texture, frame);
         scene.add.existing(this);
@@ -15,4 +15,10 @@ class Spaceship extends Phaser.GameObjects.Sprtie {
         }
 
     }
+
+    reset() {
+        this.x = game.config.width;
+    }
+
+
 }
