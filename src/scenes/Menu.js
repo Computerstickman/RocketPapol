@@ -5,5 +5,6 @@ class Menu extends Phaser.Scene {
 
     create(){
         this.add.text(20,20, "Fokit Papol Menu");
+        this.scene.start("playScene");
     }
 }
